@@ -1,5 +1,7 @@
 package br.com.teste;
 
+import org.springframework.util.ObjectUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -27,7 +29,8 @@ public class Teste {
         }
 
         if (Util.isNotEmpty(lista)) {
-            logger.log(Level.INFO,"lista.size by isEmpty = "+ lista.size());
+            logger.log(Level.INFO, "dentro do if");
+            logger.log(Level.INFO,"lista.size by isEmpty testando = "+ lista.size());
         }
         //logger.log(Level.INFO,"lista.size sem isEmpty = "+ lista.size());
 
