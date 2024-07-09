@@ -1,6 +1,9 @@
 package br.com.teste;
 
+import org.springframework.lang.NonNull;
+
 import java.util.Collection;
+import java.util.Objects;
 
 public class Util {
 
@@ -13,7 +16,7 @@ public class Util {
     }
 
     public static boolean isEmpty(String str) {
-        return isNull(str) || str.isEmpty();
+        return Util.isNull(str) || str.isEmpty();
     }
 
     public static boolean isNotEmpty(String str) {
@@ -21,11 +24,12 @@ public class Util {
     }
 
     public static boolean isEmpty(Collection collection) {
-        return isNull(collection) || collection.isEmpty();
+        return Util.isNull(collection) || collection.isEmpty();
     }
 
+    @NonNull
     public static boolean isNotEmpty(Collection collection) {
-        return !Util.isEmpty(collection);
+        return Objects.nonNull(collection) && !Util.isEmpty(collection);
     }
 
 }
