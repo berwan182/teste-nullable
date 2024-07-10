@@ -33,6 +33,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: sqp_eb748c994dc4bb0a95338d24da45e42a59b0049e
+          SONAR_HOST_URL: http://localhost:9000
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=berwan182_teste-nullable_db8c4dc1-4566-413d-bc34-d2404a425515 -Dsonar.projectName='teste-nullable'
