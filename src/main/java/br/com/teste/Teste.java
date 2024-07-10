@@ -30,8 +30,9 @@ public class Teste {
 
         if (Util.isNotEmpty(lista)) {
             logger.log(Level.INFO, "dentro do if");
-            logger.log(Level.INFO,"lista.size by isEmpty testando = "+ lista.size());
+            logger.log(Level.INFO,"lista.size by isEmpty testando ="+ lista.size());
         }
+        logger.log(Level.INFO, "depois do if");
         //logger.log(Level.INFO,"lista.size sem isEmpty = "+ lista.size());
 
 
