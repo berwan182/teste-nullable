@@ -33,6 +33,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          SONAR_TOKEN: sqp_993287334f28a72b59020682e7d66b33baa8c25a
+          SONAR_TOKEN: sqp_db50ae2f09b4b68c29f789be4f49c757b17a0aea
           SONAR_HOST_URL: https://3dca-138-186-233-98.ngrok-free.app
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=berwan182_teste-nullable_db8c4dc1-4566-413d-bc34-d2404a425515 -Dsonar.projectName='teste-nullable'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=berwan182_teste-nullable_85e50781-16d9-4049-9fb2-4696d1040a17 -Dsonar.projectName='teste-nullable'
